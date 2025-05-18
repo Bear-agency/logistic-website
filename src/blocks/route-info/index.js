@@ -61,7 +61,7 @@ export function RouteInfoBlock() {
                  height="40px"
                   value={loc}
                   onChange={e => onLocationChange(e.target.value, idx)}
-                  placeholder=""
+                  placeholder="Начните вводить название"
                   style={styles.inputWithIcon}
                 />
                 {idx > 0 && (
@@ -89,7 +89,7 @@ export function RouteInfoBlock() {
           <InputField
             value={unloadPlace}
             onChange={e => setUnloadPlace(e.target.value)}
-            placeholder=""
+            placeholder="Начните вводить название"
             width="100%"
             height="40px"
           />

@@ -1,6 +1,4 @@
 export const container = {
-  padding: '24px 0',
-  borderBottom: '1px solid #E5E7EB',
 };
 
 export const header = {
@@ -13,6 +11,13 @@ export const title = {
   fontWeight: 600,
   color: '#111827',
   marginBottom: '4px',
+};
+
+export const divider = {
+  marginTop: '30px',
+  marginBottom: '30px',
+  border: 'none',
+  borderTop: '1px solid #E5E7EB',
 };
 
 export const subtitle = {

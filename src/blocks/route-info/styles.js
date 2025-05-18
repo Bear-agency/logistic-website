@@ -11,6 +11,7 @@ export const subtitle = {
   fontSize: '16px',
   fontFamily: 'sans-serif',
   color: '#6B7280',
+  marginBottom: '40px',
 };
 export const row = {
   display: 'flex',
@@ -28,8 +29,8 @@ export const dateRange = {
 
 export const dateLabel = {
   display: 'block',
-  marginBottom: 4,
   fontSize: '14px',
+  marginBottom: '8px',
   fontFamily: 'sans-serif',
   color: '#1F2937',
   fontWeight: 500,
@@ -47,7 +48,7 @@ export const locationWrapper = {
 
 export const locationLabel = {
   display: 'block',
-  marginBottom: 4,
+  marginBottom: '8px',
   fontSize: '14px',
   color: '#1F2937',
   fontFamily: 'sans-serif',

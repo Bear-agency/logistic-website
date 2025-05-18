@@ -4,6 +4,7 @@ import RegisterPageConfirmCode from "./RegisterPageConfirmCode";
 import RegisterPagePassword from "./RegisterPagePassword";
 import RegisterPageStepFour from "./RegisterPageStepFour";
 import RegisterPageStepTree from "./RegisterPageStepThree";
+import AddCargo from "./AddCargo";
 import Test from "./Test";
 
-export { Login, RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword,RegisterPageStepFour,RegisterPageStepTree, Test};
+export { Login, RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword,RegisterPageStepFour,RegisterPageStepTree, Test, AddCargo};

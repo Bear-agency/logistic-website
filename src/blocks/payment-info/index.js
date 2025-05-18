@@ -57,6 +57,7 @@ const PaymentInfoBlock = ({
           />
         </div>
       </div>
+            <hr style={styles.divider} />
     </div>
   );
 };
