@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Routes, Route } from 'react-router-dom';
-import { Login,  RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword, RegisterPageStepFour, RegisterPageStepTree, Test, AddCargo} from './pages';
+import { Login,  RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword, RegisterPageStepFour, RegisterPageStepTree, Test, AddCargo, AddCar} from './pages';
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/step-three" element={<RegisterPageStepTree />} />
         <Route path="/step-four" element={<RegisterPageStepFour />} />
         <Route path="/add-cargo" element={<AddCargo />} />
+        <Route path="/add-car" element={<AddCar />} />
       </Routes>
     </div>
 

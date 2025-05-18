@@ -10,14 +10,8 @@ export const title = {
 export const subtitle = {
   fontSize: '16px',
   fontFamily: 'sans-serif',
+  marginBottom: '40px',
   color: '#6B7280',
-};
-
-export const divider = {
-  marginTop: '30px',
-  marginBottom: '20px',
-  border: 'none',
-  borderTop: '1px solid #E5E7EB',
 };
 
 // трёхколоночная сетка + 1 колонка для радио
@@ -32,11 +26,18 @@ export const grid = {
 // общий стиль для подписи
 export const fieldLabel = {
   fontSize: '14px',
+  marginBottom: '8px',
   fontFamily: 'sans-serif',
   color: '#1F2937',
 
 
 };
+export const divider = {
+  marginTop: '30px',
+  border: 'none',
+  borderTop: '1px solid #E5E7EB',
+};
+
 
 // общие размеры для инпутов/дропдаунов
 export const fullWidth = {
