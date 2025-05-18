@@ -1,12 +1,13 @@
 import React from 'react';
 import {  Routes, Route } from 'react-router-dom';
-import { Login,  RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword, RegisterPageStepFour, RegisterPageStepTree} from './pages';
+import { Login,  RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword, RegisterPageStepFour, RegisterPageStepTree, Test} from './pages';
 
 const App = () => {
   return (
 
     <div>
       <Routes>
+        <Route path="/" element={<Test />} />
         <Route path="/login" element={<Login />} />
         <Route path="/step-one" element={<RegisterPageStepOne />} />
         <Route path="/step-one-code" element={<RegisterPageConfirmCode />} />
