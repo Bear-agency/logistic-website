@@ -4,7 +4,8 @@ import StepProgress from '../../components/step-progres';
 import ButtonShaded from '../../components/button-shaded';
 import ButtonEmpty from '../../components/button-empty';
 import PhoneInput from '../../components/phone-input';
-import Header from '../../components/header';
+import Header from '../../blocks/header';
+import Footer from '../../blocks/footer';
 import * as styles from './styles';
 
 const RegisterPageStepOne = () => {
@@ -33,6 +34,7 @@ const RegisterPageStepOne = () => {
         <ButtonEmpty label="Вход" onClick={() => navigate('/login')} />
       </div>
     </div>
+        <Footer/>
     </div>
   );
 };

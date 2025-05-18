@@ -4,7 +4,8 @@ import StepProgress from '../../components/step-progres';
 import ButtonShaded from '../../components/button-shaded';
 import ButtonEmpty from '../../components/button-empty';
 import InputFieldCod from '../../components/input-field-cod';
-import Header from '../../components/header';
+import Header from '../../blocks/header';
+import Footer from '../../blocks/footer';
 import * as styles from './styles';
 
 const RegisterPageConfirmCode = () => {
@@ -25,9 +26,10 @@ const RegisterPageConfirmCode = () => {
       </div>
 
       <div style={styles.footer}>
-        <ButtonEmpty label="Изменить номер" onClick={() => navigate('/step-one-code')} />
+        <ButtonEmpty label="Изменить номер" onClick={() => navigate('/step-one')} />
       </div>
     </div>
+        <Footer/>
     </div>
   );
 };

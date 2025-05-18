@@ -35,5 +35,6 @@ export const buttonWrapper = {
 
 export const footer = {
   marginTop: '10px',
+  marginBottom: '50px',
   fontSize: '14px',
 };

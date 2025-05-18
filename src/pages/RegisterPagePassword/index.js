@@ -3,7 +3,8 @@ import StepProgress from '../../components/step-progres';
 import ButtonShaded from '../../components/button-shaded';
 import InputField from '../../components/input-field';
 import { useNavigate } from 'react-router-dom';
-import Header from '../../components/header';
+import Footer from '../../blocks/footer';
+import Header from '../../blocks/header';
 import * as styles from './styles';
 
 const RegisterPagePassword = () => {
@@ -34,6 +35,7 @@ const RegisterPagePassword = () => {
 
      
     </div>
+        <Footer/>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaBullhorn, FaQuestionCircle, FaCog, FaEnvelope } from 'react-icons/fa';
-import ButtonShaded from '../button-shaded';
+import ButtonShaded from '../../components/button-shaded';
 import * as styles from './styles';
 
 const menuItems = ['Пункт1', 'Пункт2', 'Пункт3', 'Пункт4'];

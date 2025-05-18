@@ -3,7 +3,8 @@ import StepProgress from '../../components/step-progres';
 import ButtonShaded from '../../components/button-shaded';
 import InputField from '../../components/input-field';
 import { useNavigate } from 'react-router-dom';
-import Header from '../../components/header';
+import Header from '../../blocks/header';
+import Footer from '../../blocks/footer';
 import * as styles from './styles';
 
 const RegisterPageStepTree = () => {
@@ -56,6 +57,7 @@ const RegisterPageStepTree = () => {
         <ButtonShaded label="Завершить регистрацию" width="360px" onClick={() => navigate('/step-four')} />
       </div>
     </div>
+        <Footer/>
     </div>
   );
 };

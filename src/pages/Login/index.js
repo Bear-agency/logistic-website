@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import ButtonEmpty from '../../components/button-empty';
 import ButtonShaded from '../../components/button-shaded';
 import InputField from '../../components/input-field';
-import Header from '../../components/header';
-import AuthorizedHeader from '../../components/header-authorized';
+import Header from '../../blocks/header';
+import Footer from '../../blocks/footer';
 import * as styles from './styles';
 
 const Login = () => {
@@ -46,6 +46,7 @@ const Login = () => {
         />
       </div>
     </div>
+    <Footer/>
     </div>
   );
 };

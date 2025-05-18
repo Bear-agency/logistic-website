@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import StepProgress from '../../components/step-progres';
 import ButtonShaded from '../../components/button-shaded';
 import { CheckCircle } from 'lucide-react';
-import Header from '../../components/header';
+import Header from '../../blocks/header';
+import Footer from '../../blocks/footer';
 import * as styles from './styles';
 
 const RegisterPageStepFour = () => {
@@ -21,6 +22,7 @@ const RegisterPageStepFour = () => {
         <ButtonShaded label="Перейти в личный кабинет" onClick={() => console.log(phone)} />
       </div>
     </div>
+        <Footer/>
     </div>
   );
 };

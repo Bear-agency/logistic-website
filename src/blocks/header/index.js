@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ButtonShaded from '../button-shaded';
-import ButtonEmpty from '../button-empty';
+import ButtonEmpty from '../../components/button-empty';
+import ButtonShaded from '../../components/button-shaded';
 import * as styles from './styles';
 import { useNavigate } from 'react-router-dom';
 
