@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import * as styles from './styles';
 
-const DropdownMenu = ({ options = [], placeholder = 'Text dropdown menu', onSelect }) => {
+const DropdownMenu = ({
+  options = [],
+  placeholder = 'Text dropdown menu',
+  onSelect,
+  width = '200px',
+  height = '40px'
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(placeholder);
 
@@ -14,8 +20,8 @@ const DropdownMenu = ({ options = [], placeholder = 'Text dropdown menu', onSele
   };
 
   return (
-    <div style={styles.dropdown}>
-      <div onClick={toggleDropdown} style={styles.selector}>
+    <div style={{ ...styles.dropdown, width }}>
+      <div onClick={toggleDropdown} style={{ ...styles.selector, height }}>
         <span>{selected}</span>
         <svg
           style={styles.arrow}
@@ -35,7 +41,7 @@ const DropdownMenu = ({ options = [], placeholder = 'Text dropdown menu', onSele
         </svg>
       </div>
       {isOpen && (
-        <div style={styles.menu}>
+        <div style={{ ...styles.menu, width }}>
           {options.map((option) => (
             <div
               key={option}
