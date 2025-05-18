@@ -2,6 +2,7 @@ import React from 'react';
 import * as styles from './styles';
 
 const InputField = ({
+  multiline,
   placeholder = 'Введите текст',
   width = '300px',
   height = '40px',
@@ -11,6 +12,7 @@ const InputField = ({
 }) => {
   return (
     <input
+    
       type={type}
       placeholder={placeholder}
       onChange={onChange}

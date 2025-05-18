@@ -37,4 +37,8 @@ export const footer = {
   marginTop: '40px',
   fontSize: '14px',
 };
+     
+export const checkcircle = {
+  marginTop: '40px',
 
+};

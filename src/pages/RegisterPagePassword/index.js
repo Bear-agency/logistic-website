@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import StepProgress from '../../components/step-progres';
 import ButtonShaded from '../../components/button-shaded';
 import InputField from '../../components/input-field';
+import { useNavigate } from 'react-router-dom';
+import Header from '../../components/header';
 import * as styles from './styles';
 
 const RegisterPagePassword = () => {
   const [phone] = useState('');
+    const navigate = useNavigate();
 
   return (
+    <div>
+      <Header/>
     <div style={styles.container}>
       <StepProgress steps={4} activeStep={2} />
       <h2 style={styles.title}>Укажите пароль</h2>
@@ -24,10 +29,11 @@ const RegisterPagePassword = () => {
       </div>
 
       <div style={styles.buttonWrapper}>
-        <ButtonShaded label="Далее" onClick={() => console.log(phone)} />
+        <ButtonShaded label="Далее" onClick={() => navigate('/step-three')} />
       </div>
 
      
+    </div>
     </div>
   );
 };
