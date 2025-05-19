@@ -1,40 +1,38 @@
-import Pagination from "../../components/pagination";
-import RadioGroup from "../../components/radio-group";
-import DatePicker from "../../components/date-picker";
-import FavoriteButton from "../../components/favorite-button";
-import TextIconButton from "../../components/button-text-icon";
-import PriceInput from "../../components/price-input";
-import AdditionalInfoBlock from "../../blocks/additional-info";
-import PaymentInfoBlock from "../../blocks/payment-info";
-import { RouteInfoBlock } from "../../blocks/route-info";
-import { RouteCargoInfo } from "../../blocks/route-cargo-info";
-import { TransportCargoInfo } from "../../blocks/transport-cargo-info";
-import FilterBlock from "../../blocks/filter-block";
-import { Plus, Trash } from 'lucide-react';
-import React, { useState } from 'react';
+import RoutePath from "../../components/route-path";
+import HighlightedText from "../../components/highlighted-text";
+import HighlightedGreenText from "../../components/highlighted-green-text";
+import HighlightedBlueText from "../../components/highlighted-blue-text";
+import HighlightedOrangeText from "../../components/highlighted-orange-text";
+import HighlightedGreyText from "../../components/highlighted-grey-text";
+import HighlightedBlackText from "../../components/highlighted-black-text";
+import FavoriteButtonNoText from "../../components/favorite-button-no-text";
+import BrownText from "../../components/brown-text";
+import ToggleCollapseButton from "../../components/toggle-collapse-button";
+import {Database } from 'lucide-react';
+import SearchInput from "../../components/search-input";
+import CircleToggleButton from "../../components/circle-toggle-button";
+import UserAvatar from "../../components/user-avatar";
+
 
 const Test = () => {
-const [date, setDate] = useState('2025-10-27');
-  const [currency, setCurrency] = useState('USD');
-  const [price, setPrice] = useState('');
-
-  const [additionalInfo, setAdditionalInfo] = useState('');
-
-  const handleChange = (e) => {
-    setAdditionalInfo(e.target.value);
-  };
-
-  const handleCurrencyChange = (e) => {
-    setCurrency(e.target.value);
-  };
-
-  const handlePriceChange = (e) => {
-    setPrice(e.target.value);
-  };
 
   return (
     <div>
-   <FilterBlock/>
+   <RoutePath places={['Ташкент', 'Самарканд', 'Бухара']} />
+   <HighlightedText children='Кол-во палет: 33'/>
+   <HighlightedGreenText   icon={Database} children='200 000 грн'/>
+   <HighlightedGreenText   children='Наличные'/>
+   <HighlightedBlueText   children='999 км'/>
+   <HighlightedOrangeText children='Кол-во повторов: 2'/>
+   <BrownText children='Кол-во повторов: 2'/>
+   <HighlightedGreyText children='Кол-во повторов: 2'/>
+   <HighlightedBlackText children='Кол-во повторов: 2'/>
+   <FavoriteButtonNoText/>
+   <ToggleCollapseButton label="Подробнее" width="140px" />
+   <SearchInput onSearch={(query) => console.log('Искать:', query)} />
+   <CircleToggleButton />
+   <UserAvatar name="Иван Иванович" />
+
     </div>
     
   );
