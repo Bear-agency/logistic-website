@@ -25,6 +25,22 @@ export const logo = {
   marginBottom: '8px',
 };
 
+
+// Когда закрыт
+export const footerClosed = {
+  position: 'fixed',
+  bottom: 0,
+  left: 0,
+  width: '100%',
+  padding: '8px 16px',
+  zIndex: 1000,
+};
+
+// Когда открыт
+export const footerOpen = {
+  position: 'relative',
+  padding: '24px 32px',
+};
 export const socialIcons = {
   display: 'flex',
   gap: '12px',

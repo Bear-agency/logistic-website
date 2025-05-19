@@ -9,6 +9,7 @@ import PaymentInfoBlock from "../../blocks/payment-info";
 import { RouteInfoBlock } from "../../blocks/route-info";
 import { RouteCargoInfo } from "../../blocks/route-cargo-info";
 import { TransportCargoInfo } from "../../blocks/transport-cargo-info";
+import FilterBlock from "../../blocks/filter-block";
 import { Plus, Trash } from 'lucide-react';
 import React, { useState } from 'react';
 
@@ -33,43 +34,7 @@ const [date, setDate] = useState('2025-10-27');
 
   return (
     <div>
-        <Pagination totalPages={10} />
-        <DatePicker value={date} onChange={setDate} />
-
-        <RadioGroup
-          label="Test"
-          name="loadOption"
-          options={[
-            { label: 'Test 1', value: 'none' },
-            { label: 'Test 2', value: 'full' },
-            { label: 'Test 3', value: 'possible' },]}
-          onChange={(val) => console.log('Selected:', val)}
-          />
-          <FavoriteButton onClick={(state) => console.log('Active:', state)} />
-        
-<TextIconButton
-  label="Добавить место загрузки"
-  Icon={Plus}
-  onClick={() => console.log('Добавить место')}
-/>
-<TextIconButton
-  label="Удалить место загрузки"
-  Icon={Trash}
-  onClick={() => console.log('Удалить место')}
-/>
-    <PriceInput
-      value={price}
-      onChange={handlePriceChange}
-      currency={currency}
-      onCurrencyChange={handleCurrencyChange}
-      currencies={['USD', 'EUR', 'UAH']}
-    />
-
- <AdditionalInfoBlock />
- <PaymentInfoBlock/>
- <RouteInfoBlock/>
-<RouteCargoInfo/>
-<TransportCargoInfo/>
+   <FilterBlock/>
     </div>
     
   );

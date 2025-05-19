@@ -6,7 +6,10 @@ const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer style={styles.footer}>
+    <footer style={{
+    ...styles.footer,
+    ...(isOpen ? styles.footerOpen : styles.footerClosed)
+  }}>
       {isOpen && (
         <div style={styles.footerContent}>
           <div style={styles.column}>

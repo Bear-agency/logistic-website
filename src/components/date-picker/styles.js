@@ -7,6 +7,7 @@ export const datePickerWrapper = {
   borderRadius: '8px',
   backgroundColor: '#fff',
   fontSize: '14px',
+  height: '24px',
   width: 'fit-content',
 };
 
