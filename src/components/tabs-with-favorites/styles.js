@@ -5,7 +5,7 @@ export const container = {
   borderBottom: '1px solid #e0e0e0',
   marginBottom: '30px',
   fontFamily: 'sans-serif',
-  width: '93%'
+  width: '100%'
 };
 
 export const tabsContainer = {

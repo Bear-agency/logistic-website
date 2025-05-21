@@ -4,6 +4,7 @@ import DropdownMenu from '../../components/dropdown-menu';
 import ButtonShaded from '../../components/button-shaded';
 import Tabs from '../../components/tabs';
 import * as styles from './styles';
+import { useNavigate } from 'react-router-dom';
 
 const FilterBlock = ({
   setMassFrom,
@@ -16,7 +17,9 @@ const FilterBlock = ({
   dateTo,
   setDateTo,
   onSearch,
+  
 }) => {
+  const navigate = useNavigate();
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
       {/* Масса */}
@@ -78,7 +81,8 @@ const FilterBlock = ({
         <ButtonShaded
           label="Найти"
           width="130px"
-          onClick={onSearch || (() => console.log('Найти'))}
+           onClick={() => navigate('/results-route')}
+
         />
       </div>
     </div>

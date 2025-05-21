@@ -87,7 +87,7 @@ export function RouteSearchPage() {
           </div>
         </div>
 
-        <FilterBlock />
+        <FilterBlock/>
       </div>
     </div>
     <Footer/>

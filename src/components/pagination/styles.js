@@ -3,7 +3,7 @@ export const containerStyle = {
   justifyContent: 'space-between',
   alignItems: 'center',
   maxWidth: '600px',
-  margin: '40px auto',
+  margin: '10px auto',
   fontFamily: 'sans-serif',
 };
 
