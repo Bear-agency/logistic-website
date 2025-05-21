@@ -8,7 +8,6 @@ export const style = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: '6px',
-    fontWeight: 'bold',
   };
 
     

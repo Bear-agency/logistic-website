@@ -1,6 +1,6 @@
 export const circleButton = {
-  width: '24px',
-  height: '24px',
+  width: '18px',
+  height: '18px',
   borderRadius: '50%',
   border: '3px solid',
   cursor: 'pointer',
