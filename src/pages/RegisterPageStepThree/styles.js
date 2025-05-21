@@ -30,12 +30,14 @@ export const stepNumber = {
 export const title = {
   fontSize: '24px',
   marginTop: '50px',
+  fontFamily: 'sans-serif',
   marginBottom: '8px',
 };
 
 export const subtitle = {
   fontSize: '16px',
   color: '#666',
+  fontFamily: 'sans-serif',
   marginBottom: '20px',
 };
 
@@ -66,9 +68,8 @@ export const label = {
   display: 'block',
   color: 'red',
 };
-
 export const buttonWrapper = {
-  margin: '20px 0',
+  margin: '20px 0 80px 0', // добавлен нижний отступ в 40px
 };
 
 export const button = {
