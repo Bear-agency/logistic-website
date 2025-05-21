@@ -24,6 +24,7 @@ import { LuCopy } from "react-icons/lu";
 import { CiCalendar, CiClock2, CiMap } from "react-icons/ci";
 import { BsTruck, BsBoxSeam } from "react-icons/bs";
 import { BiCoinStack } from "react-icons/bi";
+import { GoEye } from "react-icons/go";
 import { LiaWeightHangingSolid, LiaExpandArrowsAltSolid } from "react-icons/lia";
 const TransportCard = ({
   ifuser,
@@ -45,6 +46,8 @@ const TransportCard = ({
   updatedAt = '01.02.25 08:36',
   userName = 'Иван Иванович',
   photoURL = '',
+  count1 ='2',
+  count2 ='18',
   userPhone = '+123 123 123',
   userEmail = 'mail@gmail.com',
   showUser = true
@@ -58,7 +61,8 @@ const TransportCard = ({
          <HighlightedOrangeText icon={BsTruck} >{type}</HighlightedOrangeText>
          <HighlightedBlackText icon={CiCalendar}>{date}</HighlightedBlackText>
          <div style={styles.leftflex}>
-         <BlackText icon={CiClock2}>{time}</BlackText>
+         {ifuser ? <><HighlightedOrangeText icon={FaArrowRightArrowLeft} >Количество повторов: {count1}</HighlightedOrangeText>
+          <HighlightedOrangeText icon={GoEye} >Количество просмотров: {count2}</HighlightedOrangeText> </> : ''}<BlackText icon={CiClock2}>{time}</BlackText>
          </div>
          </div>
          <div  style={styles.rightflex}>
@@ -105,8 +109,9 @@ const TransportCard = ({
          <HighlightedOrangeText icon={BsTruck} >{type}</HighlightedOrangeText>
          <HighlightedBlackText icon={CiCalendar}>{date}</HighlightedBlackText>
          <div style={styles.leftflex}>
-         <BlackText icon={CiClock2}>{time}</BlackText>
-         </div>
+         {ifuser ? <><HighlightedOrangeText icon={FaArrowRightArrowLeft} >Количество повторов: {count1}</HighlightedOrangeText>
+          <HighlightedOrangeText icon={GoEye} >Количество просмотров: {count2}</HighlightedOrangeText> </> : ''}<BlackText icon={CiClock2}>{time}</BlackText>
+        </div>
          </div>
          <div  style={styles.rightflex}>
         <HighlightedBlueText icon={CiMap}>{distance}</HighlightedBlueText>

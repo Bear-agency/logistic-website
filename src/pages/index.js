@@ -9,5 +9,6 @@ import AddCargo from "./AddCargo";
 import AddCar from "./AddCar";
 import Test from "./Test";
 import { ResultsSearchPage } from "./ResultsSearchPage";
+import { MyRoute } from "./MyRoute";
 
-export { Login, RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword,RegisterPageStepFour,RegisterPageStepTree, Test, AddCargo, AddCar,RouteSearchPage, ResultsSearchPage};
+export { Login, RegisterPageStepOne, RegisterPageConfirmCode, RegisterPagePassword,RegisterPageStepFour,RegisterPageStepTree, Test, AddCargo, AddCar,RouteSearchPage, ResultsSearchPage, MyRoute};
