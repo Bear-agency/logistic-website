@@ -69,7 +69,7 @@ export const label = {
   color: 'red',
 };
 export const buttonWrapper = {
-  margin: '20px 0 60px 0', // добавлен нижний отступ в 40px
+  margin: '20px 0 80px 0', // добавлен нижний отступ в 40px
 };
 
 export const button = {
