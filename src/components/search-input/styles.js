@@ -5,7 +5,6 @@ export const searchContainer = {
   borderRadius: '20px',
   padding: '6px 12px',
   width: '100%',
-  maxWidth: '350px',
   backgroundColor: '#fff',
 };
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import * as styles from './styles';
 
-const SearchInput = ({ placeholder = 'Поиск', onSearch }) => {
+const SearchInput = ({ placeholder = 'Поиск', onSearch, Width ="350px" }) => {
   const [value, setValue] = useState('');
 
   const handleSearch = () => {
@@ -10,7 +10,7 @@ const SearchInput = ({ placeholder = 'Поиск', onSearch }) => {
   };
 
   return (
-    <div style={styles.searchContainer}>
+    <div style={{...styles.searchContainer, width: Width}}>
       <input
         type="text"
         placeholder={placeholder}
