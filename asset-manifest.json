@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/logistic-website/static/js/main.5ef3841e.js",
+    "main.js": "/logistic-website/static/js/main.3927055f.js",
     "index.html": "/logistic-website/index.html",
-    "main.5ef3841e.js.map": "/logistic-website/static/js/main.5ef3841e.js.map"
+    "main.3927055f.js.map": "/logistic-website/static/js/main.3927055f.js.map"
   },
   "entrypoints": [
-    "static/js/main.5ef3841e.js"
+    "static/js/main.3927055f.js"
   ]
 }
